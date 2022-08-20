@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/countdown/static/css/main.eaa45882.css",
+    "main.js": "/countdown/static/js/main.3f814e42.js",
+    "static/js/787.482db2ac.chunk.js": "/countdown/static/js/787.482db2ac.chunk.js",
+    "static/media/haunted-slow-orchestra.wav": "/countdown/static/media/haunted-slow-orchestra.60fed24bb5632c0bbda1.wav",
+    "static/media/terror-radio-frequency.wav": "/countdown/static/media/terror-radio-frequency.9819ed8526f02c23c3c8.wav",
+    "static/media/bells-of-mystery.wav": "/countdown/static/media/bells-of-mystery.50e9ef3348e8b1d115c7.wav",
+    "static/media/second-hand2.mp3": "/countdown/static/media/second-hand2.8b514fa108e8309e3bc8.mp3",
+    "index.html": "/countdown/index.html",
+    "main.eaa45882.css.map": "/countdown/static/css/main.eaa45882.css.map",
+    "main.3f814e42.js.map": "/countdown/static/js/main.3f814e42.js.map",
+    "787.482db2ac.chunk.js.map": "/countdown/static/js/787.482db2ac.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eaa45882.css",
+    "static/js/main.3f814e42.js"
+  ]
+}

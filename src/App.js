@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
-import Clock from "./components/Clock";
-import TimeIsOver from "./components/TimeIsOver";
-import Button from "@mui/material/Button";
+
+import { Grid, Button } from "@mui/material";
 import { Container, createTheme, ThemeProvider } from "@mui/system";
 
 import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
-import { Grid } from "@mui/material";
+
+import Clock from "./components/Clock";
+import TimeIsOver from "./components/TimeIsOver";
 
 import SoundWatch from "./assets/sound/second-hand2.mp3";
 import BellsMistery from "./assets/sound/bells-of-mystery.wav";
@@ -52,6 +53,7 @@ function App() {
     const bellsMistery = new Audio(BellsMistery);
     const terrorRadioFrequency = new Audio(TerrorRadioFrequency);
     const hauntedSlowOrchestra = new Audio(HauntedSlowOrchestra);
+
     let sampleInterval = setInterval(() => {
       if (seconds > 0) {
         setSeconds(seconds - 1);
@@ -69,9 +71,7 @@ function App() {
         hauntedSlowOrchestra.play();
       }
     }, 1000);
-    return () => {
-      clearInterval(sampleInterval);
-    };
+    return () => clearInterval(sampleInterval);
   });
 
   const buttonStyles = {
@@ -103,12 +103,7 @@ function App() {
             <TimeIsOver />
           ) : (
             <>
-              <Container
-                sx={{
-                  margin: "5rem 0",
-                  textAlign: "center",
-                }}
-              >
+              <Container sx={{ margin: "5rem 0", textAlign: "center" }}>
                 <Clock hours={hours} minutes={minutes} seconds={seconds} />
               </Container>
               <Grid

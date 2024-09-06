@@ -26,6 +26,7 @@ const theme = createTheme({
 });
 
 function App() {
+  const [isStart, setIsStart] = useState(false);
   const [hours, setHours] = useState(1);
   const [minutes, setMinutes] = useState(20);
   const [seconds, setSeconds] = useState(0);
@@ -48,7 +49,11 @@ function App() {
     }
   };
 
+  const onInteractWithPage = () => setIsStart(true);
+
   useEffect(() => {
+    if (!isStart) return;
+
     const soundWatch = new Audio(SoundWatch);
     const bellsMistery = new Audio(BellsMistery);
     const terrorRadioFrequency = new Audio(TerrorRadioFrequency);
@@ -84,7 +89,7 @@ function App() {
   return (
     <>
       {/* <ThemeProvider theme={theme}> */}
-      <div className="App">
+      <div className="App" onClick={onInteractWithPage}>
         <Grid
           container
           direction="column"
